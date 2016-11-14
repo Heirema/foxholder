@@ -1,6 +1,10 @@
 # Foxholder
 Pack of 15 unique placeholder animations. Just pick the demo you like most and install on your website in 1 minute!
 
+## View Demo
+
+[Foxholder Demo](http://foxholder.fox-hover.co.uk/)
+
 ## How to Use
 
 - Put basic HTML markup:

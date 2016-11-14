@@ -5,6 +5,13 @@ Pack of 15 unique placeholder animations. Just pick the demo you like most and i
 
 [Foxholder Demo](http://foxholder.fox-hover.co.uk/)
 
+## List of Features
+
+1. Smooth and professional-looking CSS3 animations for placeholder
+2. 15 unique effects
+3. Easy to install
+4. Crossbrowser Effects (IE 9+, Safari 9+, FF, Opera, Chrome, Edge)
+
 ## How to Use
 
 - Put basic HTML markup:

@@ -1,0 +1,147 @@
+/* common styles */
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  color: #222222;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+header {
+  margin-top: 50px;
+}
+
+.logo a {
+  color: #222222;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  display: table;
+  letter-spacing: 7px;
+}
+
+.logo a:before {
+  content: "";
+  display: inline-block;
+  width: 59px;
+  height: 90px;
+  background: url(../img/logo.png) 0 0 no-repeat;
+  background-size: contain;
+  margin-right: 23px;
+}
+
+.logo a span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.logo a span:nth-child(2) {
+  letter-spacing: 0px;
+  font-size: 12px;
+  color: #f04c1e;
+}
+
+.primary-nav {
+  margin-top: 30px;
+}
+
+.primary-nav a.btn,
+.contact-me a.btn {
+  margin-right: 5px;
+  margin-bottom: 7px;
+}
+
+nav {
+  margin-top: 30px;
+}
+
+nav a.btn {
+  background-color: #f04c1e;
+  color: #fff;
+  margin-right: 5px;
+  margin-bottom: 7px;
+}
+
+nav a.btn:hover,
+nav a.btn:focus {
+  color: #fff;
+}
+
+.primary-nav a.btn:last-child,
+nav a.btn:last-child,
+.contact-me a.btn:last-child,
+.contact-me a.btn:nth-child(3) {
+  margin-right: 0px;
+}
+
+main {
+  margin-top: 40px;
+}
+
+h3, h2 {
+  margin-top: 0px;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+.form-container,
+.how-to-use,
+.get-it-now,
+.contact-me-now {
+  padding: 50px 0px;
+  border-top: 1px solid #222;
+}
+
+form {
+  margin-top: 30px;
+}
+
+.using-info {
+  margin-top: 70px;
+}
+
+.using-info ul li {
+  margin-bottom: 40px;
+}
+
+.using-info ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.get-now,
+.contact-me {
+  margin-top: 35px;
+}
+
+.get-now a.btn {
+  margin-bottom: 20px;
+}
+
+.get-now a.btn:last-child {
+  margin-bottom: 0px;
+}
+
+.contact-me a.btn i {
+  margin-right: 13px;
+}
+
+#disqus_thread {
+  margin-top: 50px;
+}
+
+.share {
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px 0px;
+  border-top: 1px solid #222;
+}

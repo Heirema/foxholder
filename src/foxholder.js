@@ -11,7 +11,7 @@ jQuery.fn.foxholder = function(number) {
     //creating labels
     placeholderText = jQuery(this).attr('placeholder');
     formItemId = jQuery(this).attr('id')
-    jQuery(this).after('<label for="'+ formItemId +'">'+ placeholderText +'</label>');
+    jQuery(this).after('<label for="'+ formItemId +'"><span>'+ placeholderText +'</span></label>');
     jQuery(this).removeAttr('placeholder');
   });
 
@@ -30,6 +30,27 @@ jQuery.fn.foxholder = function(number) {
       jQuery(this).css({'line-height': '0px'});
     }
   });
+
+
+  //examples scripts
+
+  if (number.demo == 2) {
+
+    //example-2 adding top property for label
+    jQuery('#example-2 input, #example-2 textarea').focus(function() {
+      var labelTop;
+      labelTop = parseInt(jQuery(this).css('padding-top'));
+      jQuery(this).next('label').css({'top': 0 - (labelTop + 6)});
+      console.log(labelTop);
+    });
+
+    jQuery('#example-2 input, #example-2 textarea').blur(function() {
+      if (jQuery(this).hasClass('active')) {
+      } else {
+        jQuery(this).next('label').css({'top': 0});
+      }
+    });
+  }
 
   if (number.demo == 3) {
 
@@ -69,14 +90,15 @@ jQuery.fn.foxholder = function(number) {
     jQuery('#example-4 input, #example-4 textarea').focus(function() {
 
       var labelWidth;
-      labelWidth = jQuery(this).siblings('label').width();
-      jQuery(this).siblings('label').css({'left': 0 - (labelWidth + 60)});
+      labelWidth = jQuery(this).next('label').width();
+      console.log(labelWidth);
+      jQuery(this).next('label').css({'left': 0 - (labelWidth + 60)});
     });
 
     jQuery('#example-4 input, #example-4 textarea').blur(function() {
       if (jQuery(this).hasClass('active')) {
       } else {
-        jQuery(this).siblings('label').css({'left': 0});
+        jQuery(this).next('label').css({'left': 1});
       }
     });
 
@@ -87,6 +109,17 @@ jQuery.fn.foxholder = function(number) {
     //example-7 adding icon
     jQuery('#example-7 input, #example-7 textarea').each(function() {
       jQuery(this).parent().append('<div class="icon-triangle"></div>');
+    });
+
+    jQuery('#example-7 input').each(function() {
+
+      var inputHeight = jQuery(this).outerHeight();
+      console.log(inputHeight);
+
+      jQuery(this).siblings('.icon-triangle').css({
+        'border-width': inputHeight / 2,
+        'border-left-width': 24
+      })
     });
 
   }
@@ -124,6 +157,25 @@ jQuery.fn.foxholder = function(number) {
           jQuery(this).css({'padding-left': 20});
         }
       });
+    });
+
+  }
+
+  if (number.demo == 10) {
+
+    //example-10 label top position
+    jQuery('#example-10 input, #example-10 textarea').focus(function() {
+      var labelTop;
+      labelTop = parseInt(jQuery(this).css('padding-top'));
+      jQuery(this).next('label').css({'top': 0 - (labelTop + 10)});
+      console.log(labelTop);
+    });
+
+    jQuery('#example-10 input, #example-10 textarea').blur(function() {
+      if (jQuery(this).hasClass('active')) {
+      } else {
+        jQuery(this).next('label').css({'top': 0});
+      }
     });
 
   }
@@ -189,6 +241,11 @@ jQuery.fn.foxholder = function(number) {
 
 
   if (number.demo == 15) {
+
+    //example-15 adding triangle icons
+    jQuery('#example-15 input, #example-15 textarea').each(function() {
+      jQuery(this).next('label').append('<div class="top-triangle"></div>').append('<div class="bottom-triangle"></div>');
+    });
 
     //example-15 elements padding
     jQuery('#example-15 input, #example-15 textarea').focus(function() {

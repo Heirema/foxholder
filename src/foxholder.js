@@ -57,7 +57,7 @@ jQuery.fn.foxholder = function(number) {
     //example-3 paddings for inputs
     jQuery('#example-3 input').focus(function() {
       var labelWidth;
-      labelWidth = jQuery(this).siblings('label').width() + 66;
+      labelWidth = jQuery(this).siblings('label').width() + 36;
       jQuery(this).css({'padding-left': labelWidth});
     });
 

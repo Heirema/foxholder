@@ -61,7 +61,7 @@ jQuery('document').ready(function() {
   });
 
   jQuery('.form-container-ex').foxholder({
-    demo: 15,
+    demo: 3,
   });
 
 });

@@ -136,20 +136,20 @@ jQuery.fn.foxholder = function(number) {
 
       if (jQuery(this).is('input')) {
         jQuery(this).siblings('.overlay').css({
-          'width': labelWidth + 40,
+          'width': labelWidth,
           'height': '100%',
           'left': 0 - (labelWidth + 40),
         });
       } else {
         jQuery(this).siblings('.overlay').css({
-          'width': labelWidth + 40, 
+          'width': labelWidth, 
           'height' : labelHeight + 40,
           'left': 0 - (labelWidth + 40),
         });
       }
 
       jQuery(this).focus(function() {
-        jQuery(this).css({'padding-left': labelWidth + 66});
+        jQuery(this).css({'padding-left': labelWidth + 36});
       });
 
       jQuery(this).blur(function() {

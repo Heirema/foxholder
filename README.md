@@ -27,8 +27,8 @@ Pack of 15 unique placeholder animations. Just pick the demo you like most and i
 
 ```html
 <div class="your-class">
-    <input id="id-1" type="text" placeholder="My Input" />
-    <textarea id="id-2" placeholder="My Textarea"></textarea>
+    <input id="your-id-1" type="text" placeholder="My Input" />
+    <textarea id="your-id-2" placeholder="My Textarea"></textarea>
     <button type="submit">Submit</button>
 </div>
 ```

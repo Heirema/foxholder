@@ -23,12 +23,12 @@ Pack of 15 unique placeholder animations. Just pick the demo you like most and i
 </div>
 ```
 
-- Use placeholder attribute for inputs and textareas. **_Note! Use only <button> tag for submit buttons_**
+- Use **placeholder attribute** and **id attribute** for inputs and textareas. **_Note! Use only <button> tag for submit buttons_**
 
 ```html
 <div class="your-class">
-    <input type="text" placeholder="My Input" />
-    <textarea placeholder="My Textarea"></textarea>
+    <input id="your-id-1" type="text" placeholder="My Input" />
+    <textarea id="your-id-2" placeholder="My Textarea"></textarea>
     <button type="submit">Submit</button>
 </div>
 ```

@@ -3,16 +3,22 @@ jQuery.fn.foxholder = function(number) {
 
   //adding labels with placeholders content. Removing placeholders
   this.find('form').find('input,textarea').each(function() {
-    var placeholderText, formItemId; 
+    var placeholderText, formItemId, inputType; 
 
     //wrapping form elements in their oun <div> tags
     jQuery(this).wrap('<div class="form-item-block"></div>'); 
 
     //creating labels
-    placeholderText = jQuery(this).attr('placeholder');
-    formItemId = jQuery(this).attr('id')
-    jQuery(this).after('<label for="'+ formItemId +'"><span>'+ placeholderText +'</span></label>');
-    jQuery(this).removeAttr('placeholder');
+    inputType = jQuery(this).attr('type');
+
+    if (inputType == 'hidden') {
+
+    } else {
+      placeholderText = jQuery(this).attr('placeholder');
+      formItemId = jQuery(this).attr('id')
+      jQuery(this).after('<label for="'+ formItemId +'"><span>'+ placeholderText +'</span></label>');
+      jQuery(this).removeAttr('placeholder');
+    }
   });
 
   //adding class on blur
